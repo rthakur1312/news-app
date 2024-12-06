@@ -54,7 +54,7 @@ function App() {
   const sectionQuery = selectedSections.join('%20AND%20');
   console.log('sectionQuery', sectionQuery);
 
-  // Function to fetch news articles
+  // fetch news articles
   useEffect(() => {
     const fetchNews = async () => {
       const url = `https://content.guardianapis.com/search?page=1&page-size=${page}&q=${sectionQuery}&api-key=${API_KEY}`;
