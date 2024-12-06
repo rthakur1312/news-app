@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'Barlow-Regular';
+  src: url('../public/font/Barlow-Regular.woff2') format('woff2'),
+      url('../public/font/Barlow-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow-semibold';
+  src: url('../public/font/Barlow-SemiBold.woff2') format('woff2'),
+      url('../public/font/Barlow-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow-bolditalic';
+  src: url('../public/font/Barlow-SemiBoldItalic.woff2') format('woff2'),
+      url('../public/font/Barlow-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow-bold';
+  src: url('../public/font/Barlow-Bold.woff2') format('woff2'),
+      url('../public/font/Barlow-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+h2, button, select, p, div, li, span {
+  font-family: "Barlow-Regular", sans-serif !important;
+}
+
+h6 {
+  font-family: "Barlow-semibold", sans-serif !important;
+}
