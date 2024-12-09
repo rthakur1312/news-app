@@ -69,7 +69,7 @@ function App() {
         if (data.response.results.length > 0) {
           const articlesWithContent = await Promise.all(
             data.response.results.map(async (article) => {
-              const scrapedData = await axios.get('http://localhost:5000/scrape', {
+              const scrapedData = await axios.get('https://news-app-server-taupe.vercel.app/scrape', {
                 params: { 
                   url: article.webUrl,
                   summaryLength: summaryLength
